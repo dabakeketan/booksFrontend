@@ -23,7 +23,7 @@ export class HeaderComponent implements OnInit {
 
   logout() {
     sessionStorage.removeItem('testLogin');
-    window.location.reload();
+    this.router.navigate(['/login']);
   }
 
 }
