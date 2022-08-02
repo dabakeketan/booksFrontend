@@ -1,0 +1,33 @@
+.sort-section-ul li {
+    float: left;
+    width: 100%;
+    line-height: 30px;
+    border-bottom: solid #ccc 1px;
+    border-top: 0;
+}
+
+.sort-section-ul li a {
+    display: block;
+    line-height: 30px;
+    color: #333;
+    font-size: 12px;
+}
+
+.sort-section-ul li a span {
+    visibility: hidden;
+    float: left;
+    width: 25px;
+    text-align: center;
+}
+
+.sort-section-ul li a span.text {
+    visibility: visible;
+    width: auto;
+    border-left: solid #ccc 1px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.sort-section-ul li a.active span {
+    visibility: visible;
+}

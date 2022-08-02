@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import "~bootstrap/scss/bootstrap"; */
+/* @import "~bootstrap/scss/bootstrap"; */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body, .mat-cell {
+    color: #555;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.heading {
+    font-weight: bold;
+    color: #555;
+    text-decoration: underline;
+}
+
+.mat-row {
+    min-height: auto !important;
+}
+
+.mat-header-row, .mat-row {
+    padding: 8px 10px !important;
+}
+
+.mat-header-cell {
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+}
+
+.mat-cell {
+    font-size: 13px !important;
+}

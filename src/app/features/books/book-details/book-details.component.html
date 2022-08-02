@@ -1,0 +1,31 @@
+<app-header></app-header>
+<div class="container" style="padding-top: 40px;" *ngIf="book">
+  <form #updateBookForm="ngForm">
+    <div class="mb-3 row">
+      <label for="inputTitle" class="col-sm-2 col-form-label">Title</label>
+      <div class="col-sm-10">
+        <input type="text" required class="form-control" [(ngModel)]="book.title" placeholder="Title" id="inputTitle"
+          name="inputTitle">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="inputAuthor" class="col-sm-2 col-form-label">Author</label>
+      <div class="col-sm-10">
+        <input type="text" placeholder="Author" [(ngModel)]="book.author" class="form-control" id="inputAuthor"
+          name="inputAuthor">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="inputPrice" class="col-sm-2 col-form-label">Price</label>
+      <div class="col-sm-10">
+        <input type="text" placeholder="Price" [(ngModel)]="book.price" class="form-control" id="inputPrice"
+          name="inputPrice">
+      </div>
+    </div>
+    <div class="col-auto">
+      <label class="col-sm-2 col-form-label">&nbsp;</label>
+      <button [disabled]="updateBookForm.invalid" type="submit" class="btn btn-primary mb-3"
+        (click)="updateBookEntry()">Update</button>
+    </div>
+  </form>
+</div>
